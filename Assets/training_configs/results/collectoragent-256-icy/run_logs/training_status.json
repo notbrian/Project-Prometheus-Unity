@@ -1,0 +1,29 @@
+{
+    "PushCollector": {
+        "checkpoints": [
+            {
+                "steps": 499989,
+                "file_path": "results\\collectoragent-256-icy\\PushCollector\\PushCollector-499989.nn",
+                "reward": null,
+                "creation_time": 1603237605.2636368
+            },
+            {
+                "steps": 760565,
+                "file_path": "results\\collectoragent-256-icy\\PushCollector\\PushCollector-760565.nn",
+                "reward": null,
+                "creation_time": 1603237874.7436528
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 760565,
+            "file_path": "results\\collectoragent-256-icy\\PushCollector.nn",
+            "reward": null,
+            "creation_time": 1603237874.7436528
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.3.1"
+    }
+}

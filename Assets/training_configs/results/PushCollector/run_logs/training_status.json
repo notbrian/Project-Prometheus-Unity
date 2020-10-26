@@ -1,0 +1,23 @@
+{
+    "PushCollector": {
+        "checkpoints": [
+            {
+                "steps": 292425,
+                "file_path": "results\\PushCollector\\PushCollector\\PushCollector-292425.nn",
+                "reward": -0.9998000464402139,
+                "creation_time": 1602094416.6681287
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 292425,
+            "file_path": "results\\PushCollector\\PushCollector.nn",
+            "reward": -0.9998000464402139,
+            "creation_time": 1602094416.6681287
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.20.0",
+        "tensorflow_version": "2.3.1"
+    }
+}

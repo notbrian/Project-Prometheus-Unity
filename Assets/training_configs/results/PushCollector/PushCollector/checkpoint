@@ -1,0 +1,2 @@
+model_checkpoint_path: "PushCollector-292425.ckpt"
+all_model_checkpoint_paths: "PushCollector-292425.ckpt"
