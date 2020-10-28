@@ -27,20 +27,18 @@ public class PushAgent : Agent
     {
 
         firstTouched = false;
-        if (this.transform.localPosition.y < 0)
-        {
-            // If the Agent fell, zero its momentum
-            this.rBody.angularVelocity = Vector3.zero;
-            this.rBody.velocity = Vector3.zero;
-            this.transform.localPosition = new Vector3(0, 0.5f, 0);
-            this.transform.localRotation = Quaternion.Euler(0, 0, 0);
 
-        }
+        // If the Agent fell, zero its momentum
+        this.rBody.angularVelocity = Vector3.zero;
+        this.rBody.velocity = Vector3.zero;
+        this.transform.localPosition = new Vector3(0, 0.5f, 0);
+        this.transform.localRotation = Quaternion.Euler(0, 0, 0);
 
         // Move the target to a new spot
         Resource.localPosition = new Vector3(Random.value * 8 - 4,
                                            0.5f,
                                            Random.value * 8 - 4);
+        Resource.gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
         StartingPosition = Resource.localPosition;
         // Move the collection point to a new spot
