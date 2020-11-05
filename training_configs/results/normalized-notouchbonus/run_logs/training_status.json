@@ -1,0 +1,47 @@
+{
+    "PushCollectorEvo": {
+        "checkpoints": [
+            {
+                "steps": 3999956,
+                "file_path": "results\\normalized-notouchbonus\\PushCollectorEvo\\PushCollectorEvo-3999956.nn",
+                "reward": 3.131618940404483,
+                "creation_time": 1604538521.8698204
+            },
+            {
+                "steps": 4499990,
+                "file_path": "results\\normalized-notouchbonus\\PushCollectorEvo\\PushCollectorEvo-4499990.nn",
+                "reward": 2.2612221108542547,
+                "creation_time": 1604538769.7979665
+            },
+            {
+                "steps": 4891954,
+                "file_path": "results\\normalized-notouchbonus\\PushCollectorEvo\\PushCollectorEvo-4891954.nn",
+                "reward": null,
+                "creation_time": 1604538975.3517964
+            },
+            {
+                "steps": 4999943,
+                "file_path": "results\\normalized-notouchbonus\\PushCollectorEvo\\PushCollectorEvo-4999943.nn",
+                "reward": 2.3483332209289074,
+                "creation_time": 1604539503.8199687
+            },
+            {
+                "steps": 5000323,
+                "file_path": "results\\normalized-notouchbonus\\PushCollectorEvo\\PushCollectorEvo-5000323.nn",
+                "reward": 3.1283332432309785,
+                "creation_time": 1604539504.0609572
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000323,
+            "file_path": "results\\normalized-notouchbonus\\PushCollectorEvo.nn",
+            "reward": 3.1283332432309785,
+            "creation_time": 1604539504.0609572
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

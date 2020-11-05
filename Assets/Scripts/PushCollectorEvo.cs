@@ -138,17 +138,17 @@ public class PushCollectorEvo : Agent
         AddReward(-1f / MaxStep);
     }
 
-    private void OnCollisionEnter(Collision other)
-    {
-        if (other.collider.CompareTag("resource"))
-        {
-            if (firstTouched == false)
-            {
-                firstTouched = true;
-                AddReward(0.5f);
-            }
-        }
-    }
+    // private void OnCollisionEnter(Collision other)
+    // {
+    //     if (other.collider.CompareTag("resource"))
+    //     {
+    //         if (firstTouched == false)
+    //         {
+    //             firstTouched = true;
+    //             AddReward(0.5f);
+    //         }
+    //     }
+    // }
 
     public void CollectedResource()
     {
