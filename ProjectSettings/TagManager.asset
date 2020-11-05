@@ -6,6 +6,7 @@ TagManager:
   tags:
   - resource
   - collectionpoint
+  - boundary
   layers:
   - Default
   - TransparentFX

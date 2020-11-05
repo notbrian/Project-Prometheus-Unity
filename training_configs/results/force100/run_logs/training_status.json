@@ -1,0 +1,23 @@
+{
+    "PushCollectorEvo": {
+        "checkpoints": [
+            {
+                "steps": 400718,
+                "file_path": "results\\force100\\PushCollectorEvo\\PushCollectorEvo-400718.nn",
+                "reward": null,
+                "creation_time": 1604462872.6453185
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 400718,
+            "file_path": "results\\force100\\PushCollectorEvo.nn",
+            "reward": null,
+            "creation_time": 1604462872.6453185
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "PushCollectorEvo": {
+        "checkpoints": [
+            {
+                "steps": 2499986,
+                "file_path": "results\\fix-ray\\PushCollectorEvo\\PushCollectorEvo-2499986.nn",
+                "reward": null,
+                "creation_time": 1604453180.9031794
+            },
+            {
+                "steps": 2999967,
+                "file_path": "results\\fix-ray\\PushCollectorEvo\\PushCollectorEvo-2999967.nn",
+                "reward": -0.9995000455528498,
+                "creation_time": 1604453445.349196
+            },
+            {
+                "steps": 3499999,
+                "file_path": "results\\fix-ray\\PushCollectorEvo\\PushCollectorEvo-3499999.nn",
+                "reward": -0.9995000455528498,
+                "creation_time": 1604453718.87294
+            },
+            {
+                "steps": 3999994,
+                "file_path": "results\\fix-ray\\PushCollectorEvo\\PushCollectorEvo-3999994.nn",
+                "reward": null,
+                "creation_time": 1604453991.7581942
+            },
+            {
+                "steps": 4086561,
+                "file_path": "results\\fix-ray\\PushCollectorEvo\\PushCollectorEvo-4086561.nn",
+                "reward": null,
+                "creation_time": 1604454037.374713
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4086561,
+            "file_path": "results\\fix-ray\\PushCollectorEvo.nn",
+            "reward": null,
+            "creation_time": 1604454037.374713
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

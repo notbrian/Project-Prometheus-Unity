@@ -1,0 +1,29 @@
+{
+    "PushCollectorEvo": {
+        "checkpoints": [
+            {
+                "steps": 499954,
+                "file_path": "results\\lessrays\\PushCollectorEvo\\PushCollectorEvo-499954.nn",
+                "reward": null,
+                "creation_time": 1604512332.9810145
+            },
+            {
+                "steps": 500274,
+                "file_path": "results\\lessrays\\PushCollectorEvo\\PushCollectorEvo-500274.nn",
+                "reward": null,
+                "creation_time": 1604512333.4240928
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 500274,
+            "file_path": "results\\lessrays\\PushCollectorEvo.nn",
+            "reward": null,
+            "creation_time": 1604512333.4240928
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "PushCollectorEvo": {
+        "checkpoints": [
+            {
+                "steps": 13832,
+                "file_path": "results\\curiosity-discreteactions-notouchreward\\PushCollectorEvo\\PushCollectorEvo-13832.nn",
+                "reward": null,
+                "creation_time": 1604520021.4385505
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 13832,
+            "file_path": "results\\curiosity-discreteactions-notouchreward\\PushCollectorEvo.nn",
+            "reward": null,
+            "creation_time": 1604520021.4385505
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

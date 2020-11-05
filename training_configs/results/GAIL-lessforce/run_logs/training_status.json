@@ -1,0 +1,47 @@
+{
+    "PushCollectorEvo": {
+        "checkpoints": [
+            {
+                "steps": 3499994,
+                "file_path": "results\\GAIL-lessforce\\PushCollectorEvo\\PushCollectorEvo-3499994.nn",
+                "reward": null,
+                "creation_time": 1604461691.4157221
+            },
+            {
+                "steps": 3999982,
+                "file_path": "results\\GAIL-lessforce\\PushCollectorEvo\\PushCollectorEvo-3999982.nn",
+                "reward": -0.9996000453829765,
+                "creation_time": 1604461952.7362165
+            },
+            {
+                "steps": 4499979,
+                "file_path": "results\\GAIL-lessforce\\PushCollectorEvo\\PushCollectorEvo-4499979.nn",
+                "reward": null,
+                "creation_time": 1604462220.0422273
+            },
+            {
+                "steps": 4999972,
+                "file_path": "results\\GAIL-lessforce\\PushCollectorEvo\\PushCollectorEvo-4999972.nn",
+                "reward": 4.90399993211031,
+                "creation_time": 1604462518.4574687
+            },
+            {
+                "steps": 5000332,
+                "file_path": "results\\GAIL-lessforce\\PushCollectorEvo\\PushCollectorEvo-5000332.nn",
+                "reward": 2.936066606392463,
+                "creation_time": 1604462518.8001783
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 5000332,
+            "file_path": "results\\GAIL-lessforce\\PushCollectorEvo.nn",
+            "reward": 2.936066606392463,
+            "creation_time": 1604462518.8001783
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

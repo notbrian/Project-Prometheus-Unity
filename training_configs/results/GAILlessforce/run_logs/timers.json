@@ -1,0 +1,63 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1604459824",
+        "python_version": "3.7.9 (default, Aug 31 2020, 17:10:11) [MSC v.1916 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\Brian\\anaconda3\\envs\\ml-agents-8\\Scripts\\mlagents-learn pushcollectorevo_config.yaml --run-id GAILlessforce --force",
+        "mlagents_version": "0.21.1",
+        "mlagents_envs_version": "0.21.1",
+        "communication_protocol_version": "1.2.0",
+        "tensorflow_version": "2.3.1",
+        "numpy_version": "1.19.3",
+        "end_time_seconds": "1604459829"
+    },
+    "total": 5.0118925,
+    "count": 1,
+    "self": 0.17219690000000032,
+    "children": {
+        "run_training.setup": {
+            "total": 0.006489200000000084,
+            "count": 1,
+            "self": 0.006489200000000084
+        },
+        "TrainerController.start_learning": {
+            "total": 4.8332064,
+            "count": 1,
+            "self": 0.00013459999999998473,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 4.832727,
+                    "count": 1,
+                    "self": 4.832594100000001,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 0.0001328999999996583,
+                            "count": 1,
+                            "self": 9.200000000042508e-06,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.00012369999999961578,
+                                    "count": 1,
+                                    "self": 0.00012369999999961578
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.0003447999999997009,
+                    "count": 1,
+                    "self": 0.0001386999999999361,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.0002060999999997648,
+                            "count": 1,
+                            "self": 0.0002060999999997648
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

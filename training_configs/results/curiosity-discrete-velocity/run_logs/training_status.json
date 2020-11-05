@@ -1,0 +1,41 @@
+{
+    "PushCollectorEvo": {
+        "checkpoints": [
+            {
+                "steps": 499953,
+                "file_path": "results\\curiosity-discrete-velocity\\PushCollectorEvo\\PushCollectorEvo-499953.nn",
+                "reward": -0.49866676330566406,
+                "creation_time": 1604521008.7621562
+            },
+            {
+                "steps": 999983,
+                "file_path": "results\\curiosity-discrete-velocity\\PushCollectorEvo\\PushCollectorEvo-999983.nn",
+                "reward": -0.29041672218590975,
+                "creation_time": 1604521254.6803815
+            },
+            {
+                "steps": 1499974,
+                "file_path": "results\\curiosity-discrete-velocity\\PushCollectorEvo\\PushCollectorEvo-1499974.nn",
+                "reward": -0.9996667578816414,
+                "creation_time": 1604521489.7858005
+            },
+            {
+                "steps": 1999977,
+                "file_path": "results\\curiosity-discrete-velocity\\PushCollectorEvo\\PushCollectorEvo-1999977.nn",
+                "reward": null,
+                "creation_time": 1604521725.5190651
+            },
+            {
+                "steps": 2499992,
+                "file_path": "results\\curiosity-discrete-velocity\\PushCollectorEvo\\PushCollectorEvo-2499992.nn",
+                "reward": -0.18111116190751395,
+                "creation_time": 1604521963.4332404
+            }
+        ]
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}
