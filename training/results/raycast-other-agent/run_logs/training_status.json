@@ -1,0 +1,47 @@
+{
+    "PushCollectorAgentvsAgent": {
+        "checkpoints": [
+            {
+                "steps": 2482806,
+                "file_path": "results\\raycast-other-agent\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-2482806.nn",
+                "reward": -0.27890994158145543,
+                "creation_time": 1607310786.7674468
+            },
+            {
+                "steps": 2499908,
+                "file_path": "results\\raycast-other-agent\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-2499908.nn",
+                "reward": 0.23860761779360473,
+                "creation_time": 1607310961.271953
+            },
+            {
+                "steps": 2999956,
+                "file_path": "results\\raycast-other-agent\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-2999956.nn",
+                "reward": 0.4516634325711773,
+                "creation_time": 1607311558.6209545
+            },
+            {
+                "steps": 3499900,
+                "file_path": "results\\raycast-other-agent\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-3499900.nn",
+                "reward": 0.017185160959208454,
+                "creation_time": 1607312171.0464535
+            },
+            {
+                "steps": 3597328,
+                "file_path": "results\\raycast-other-agent\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-3597328.nn",
+                "reward": -1.1267381374325072,
+                "creation_time": 1607312284.453456
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3597328,
+            "file_path": "results\\raycast-other-agent\\PushCollectorAgentvsAgent.nn",
+            "reward": -1.1267381374325072,
+            "creation_time": 1607312284.453456
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

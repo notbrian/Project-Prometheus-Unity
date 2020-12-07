@@ -1,0 +1,41 @@
+{
+    "PushCollectorAgentvsAgent": {
+        "checkpoints": [
+            {
+                "steps": 499790,
+                "file_path": "results\\raycast-only\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-499790.nn",
+                "reward": -0.9998334447542826,
+                "creation_time": 1607304918.9489563
+            },
+            {
+                "steps": 999930,
+                "file_path": "results\\raycast-only\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-999930.nn",
+                "reward": -0.9990001320838928,
+                "creation_time": 1607305520.6384566
+            },
+            {
+                "steps": 1499830,
+                "file_path": "results\\raycast-only\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-1499830.nn",
+                "reward": -0.1455029553750105,
+                "creation_time": 1607306127.0784588
+            },
+            {
+                "steps": 1993364,
+                "file_path": "results\\raycast-only\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-1993364.nn",
+                "reward": -0.23081820119510998,
+                "creation_time": 1607306732.7699544
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1993364,
+            "file_path": "results\\raycast-only\\PushCollectorAgentvsAgent.nn",
+            "reward": -0.23081820119510998,
+            "creation_time": 1607306732.7699544
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

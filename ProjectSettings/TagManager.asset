@@ -7,6 +7,11 @@ TagManager:
   - resource
   - collectionpoint
   - boundary
+  - bluegoal
+  - redgoal
+  - agent
+  - blueagent
+  - redagent
   layers:
   - Default
   - TransparentFX

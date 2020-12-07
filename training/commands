@@ -1,0 +1,3 @@
+mlagents-learn pushcollectoragentvsagent.yaml --run-id fix-blue-more-data --force
+
+tensorboard --logdir results

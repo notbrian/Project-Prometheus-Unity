@@ -1,0 +1,23 @@
+{
+    "PushCollectorAgentvsAgent": {
+        "checkpoints": [
+            {
+                "steps": 65992,
+                "file_path": "results\\less-observations\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-65992.nn",
+                "reward": -1.0046667456626892,
+                "creation_time": 1607212297.3176706
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 65992,
+            "file_path": "results\\less-observations\\PushCollectorAgentvsAgent.nn",
+            "reward": -1.0046667456626892,
+            "creation_time": 1607212297.3176706
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

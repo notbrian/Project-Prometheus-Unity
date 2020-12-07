@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class CollectionPointEvo : MonoBehaviour
 {
-    public PushCollectorEvo agent;
+    public PushCollectorAgentvsAgent agentToGivePoints;
 
     private void OnTriggerEnter(Collider col)
     {
         // Touched goal.
         if (col.gameObject.CompareTag("resource"))
         {
-            agent.CollectedResource();
+            agentToGivePoints.CollectedResource();
         }
     }
 }

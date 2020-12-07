@@ -1,0 +1,2 @@
+model_checkpoint_path: "PushCollectorAgentvsAgent-34704.ckpt"
+all_model_checkpoint_paths: "PushCollectorAgentvsAgent-34704.ckpt"

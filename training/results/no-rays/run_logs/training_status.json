@@ -1,0 +1,23 @@
+{
+    "PushCollectorAgentvsAgent": {
+        "checkpoints": [
+            {
+                "steps": 237810,
+                "file_path": "results\\no-rays\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-237810.nn",
+                "reward": null,
+                "creation_time": 1606873874.9131744
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 237810,
+            "file_path": "results\\no-rays\\PushCollectorAgentvsAgent.nn",
+            "reward": null,
+            "creation_time": 1606873874.9131744
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}

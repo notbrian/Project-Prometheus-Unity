@@ -1,0 +1,29 @@
+{
+    "PushCollectorAgentvsAgent": {
+        "checkpoints": [
+            {
+                "steps": 499611,
+                "file_path": "results\\own-goal-input\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-499611.nn",
+                "reward": -0.9281042534857988,
+                "creation_time": 1606878074.9627693
+            },
+            {
+                "steps": 908808,
+                "file_path": "results\\own-goal-input\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-908808.nn",
+                "reward": -0.9443667858839035,
+                "creation_time": 1606878771.2972682
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 908808,
+            "file_path": "results\\own-goal-input\\PushCollectorAgentvsAgent.nn",
+            "reward": -0.9443667858839035,
+            "creation_time": 1606878771.2972682
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}
