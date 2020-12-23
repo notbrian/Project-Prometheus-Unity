@@ -80,10 +80,13 @@ public class PushCollectorAgentvsAgent : Agent
     {
         // // Target and Agent positions
         // sensor.AddObservation(this.transform.localPosition);
+        // sensor.AddObservation(Resource.localPosition);
         // sensor.AddObservation(OtherAgent.localPosition);
         // sensor.AddObservation(CollectionPoint.localPosition - this.transform.localPosition);
         // sensor.AddObservation(MyCollectionPoint.localPosition - this.transform.localPosition);
         // // sensor.AddObservation(OtherAgent.localPosition - this.transform.localPosition);
+        // sensor.AddObservation(CollectionPoint.localPosition - this.transform.localPosition);
+        // sensor.AddObservation(MyCollectionPoint.localPosition - this.transform.localPosition);
         // sensor.AddObservation(Resource.localPosition - this.transform.localPosition);
         // sensor.AddObservation(Resource.localPosition - CollectionPoint.localPosition);
         // sensor.AddObservation(Resource.localPosition - MyCollectionPoint.localPosition);

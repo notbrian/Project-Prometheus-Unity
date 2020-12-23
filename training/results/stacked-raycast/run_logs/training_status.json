@@ -1,0 +1,23 @@
+{
+    "PushCollectorAgentvsAgent": {
+        "checkpoints": [
+            {
+                "steps": 454961,
+                "file_path": "results\\stacked-raycast\\PushCollectorAgentvsAgent\\PushCollectorAgentvsAgent-454961.nn",
+                "reward": null,
+                "creation_time": 1607378086.3316748
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 454961,
+            "file_path": "results\\stacked-raycast\\PushCollectorAgentvsAgent.nn",
+            "reward": null,
+            "creation_time": 1607378086.3316748
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.1.0",
+        "mlagents_version": "0.21.1",
+        "tensorflow_version": "2.3.1"
+    }
+}
