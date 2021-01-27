@@ -27,7 +27,10 @@ public class BasicAgent : MonoBehaviour
         {
             Vector3 direction = (Resource.transform.position - transform.position).normalized;
             Vector3 lookRotation = Quaternion.LookRotation(direction).eulerAngles;
-            lookRotation.x = 0f;
+            lookRotation.x = -90f;
+            // lookRotation.y = 0f;
+            lookRotation.z = 0f;
+            Debug.Log(lookRotation);
             transform.rotation = Quaternion.Euler(lookRotation);
             // transform.position = transform.position + direction * 2;
             rBody.AddForce(direction * maxAcceleration);
@@ -37,19 +40,21 @@ public class BasicAgent : MonoBehaviour
 
         else if (state == "returning")
         {
-            Vector3 direction = (CollectionPoint.transform.position - transform.position).normalized;
+            Vector3 direction = ((CollectionPoint.transform.position + new Vector3(10, 0, 0)) - transform.position).normalized;
             float distance = Vector3.Distance(CollectionPoint.transform.position, transform.position);
 
             Vector3 lookRotation = Quaternion.LookRotation(direction).eulerAngles;
-            lookRotation.x = 0f;
+            lookRotation.x = -90f;
+            // lookRotation.y = 0f;
+            lookRotation.z = 0f;
             transform.rotation = Quaternion.Euler(lookRotation);
             // transform.position = transform.position + direction * 2;
             rBody.AddForce(direction * maxAcceleration);
 
-            if (distance < 20)
+            if (distance < 10)
             {
                 Resource.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                Resource.transform.localPosition = new Vector3(0, 2, 2);
+                Resource.transform.localPosition = new Vector3(0, -0.128f, 0.0423f);
                 Resource.transform.parent = null;
                 Resource = null;
                 state = "seeking";
@@ -65,13 +70,31 @@ public class BasicAgent : MonoBehaviour
             {
                 state = "collecting";
             }
+
+            if (Resource == null)
+            {
+                state = "idle";
+            }
+        }
+        else if (state == "idle")
+        {
+            Vector3 direction = (new Vector3(0, 0, 0) - transform.position).normalized;
+            float distance = Vector3.Distance(CollectionPoint.transform.position, transform.position);
+            Vector3 lookRotation = Quaternion.LookRotation(direction).eulerAngles;
+            lookRotation.x = -90f;
+            // lookRotation.y = 0f;
+            lookRotation.z = 0f;
+            transform.rotation = Quaternion.Euler(lookRotation);
+            // transform.position = transform.position + direction * 2;
+            rBody.AddForce(direction * maxAcceleration);
+
         }
 
 
-        // if (rBody.velocity.magnitude > maxSpeed)
-        // {
-        //     rBody.velocity = rBody.velocity.normalized * maxSpeed;
-        // }
+        if (rBody.velocity.magnitude > maxSpeed)
+        {
+            rBody.velocity = rBody.velocity.normalized * maxSpeed;
+        }
 
     }
 
@@ -95,7 +118,6 @@ public class BasicAgent : MonoBehaviour
             }
 
         }
-
         return closest;
     }
     private void OnCollisionEnter(Collision other)
@@ -106,7 +128,8 @@ public class BasicAgent : MonoBehaviour
             {
                 state = "returning";
                 other.transform.parent = transform;
-                other.transform.localPosition = new Vector3(0, 2, 0);
+                // other.transform.localPosition = new Vector3(0, 2, 0);
+                other.transform.localPosition = new Vector3(0, 0, 0.04f);
                 other.rigidbody.constraints = RigidbodyConstraints.FreezePosition;
                 other.gameObject.GetComponent<Resource>().collected = true;
                 carryingObject = true;
