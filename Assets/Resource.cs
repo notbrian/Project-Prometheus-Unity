@@ -5,4 +5,7 @@ using UnityEngine;
 public class Resource : MonoBehaviour
 {
     public bool collected = false;
+    public bool held = false;
+    public GameObject resourceArea;
+
 }

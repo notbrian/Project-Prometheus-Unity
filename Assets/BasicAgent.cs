@@ -11,7 +11,7 @@ public class BasicAgent : MonoBehaviour
     public float maxSpeed = 30;
     public float maxAcceleration = 1000;
 
-    public string state = "collecting";
+    public string state = "seeking";
     public bool carryingObject = false;
 
 
@@ -19,18 +19,24 @@ public class BasicAgent : MonoBehaviour
     {
         rBody = GetComponent<Rigidbody>();
 
+
+
     }
     void Update()
     {
 
         if (state == "collecting")
         {
+            if (Resource.GetComponent<Resource>().collected)
+            {
+                state = "seeking";
+            }
+
             Vector3 direction = (Resource.transform.position - transform.position).normalized;
             Vector3 lookRotation = Quaternion.LookRotation(direction).eulerAngles;
             lookRotation.x = -90f;
             // lookRotation.y = 0f;
             lookRotation.z = 0f;
-            Debug.Log(lookRotation);
             transform.rotation = Quaternion.Euler(lookRotation);
             // transform.position = transform.position + direction * 2;
             rBody.AddForce(direction * maxAcceleration);
@@ -65,7 +71,6 @@ public class BasicAgent : MonoBehaviour
         else if (state == "seeking")
         {
             Resource = findNearestResource();
-
             if (Resource != null)
             {
                 state = "collecting";
@@ -88,6 +93,12 @@ public class BasicAgent : MonoBehaviour
             // transform.position = transform.position + direction * 2;
             rBody.AddForce(direction * maxAcceleration);
 
+            // Resource = findNearestResource();
+
+            // if (Resource != null)
+            // {
+            //     state = "collecting";
+            // }
         }
 
 
@@ -122,18 +133,19 @@ public class BasicAgent : MonoBehaviour
     }
     private void OnCollisionEnter(Collision other)
     {
-        if (other.collider.CompareTag("resource") && !carryingObject)
+        if (other.collider.CompareTag("resource") && !carryingObject && other.collider.gameObject == Resource)
         {
-            if (!other.gameObject.GetComponent<Resource>().collected)
-            {
-                state = "returning";
-                other.transform.parent = transform;
-                // other.transform.localPosition = new Vector3(0, 2, 0);
-                other.transform.localPosition = new Vector3(0, 0, 0.04f);
-                other.rigidbody.constraints = RigidbodyConstraints.FreezePosition;
-                other.gameObject.GetComponent<Resource>().collected = true;
-                carryingObject = true;
-            }
+            // if (!other.gameObject.GetComponent<Resource>().collected)
+            // {
+            state = "returning";
+            other.transform.parent = transform;
+            // other.transform.localPosition = new Vector3(0, 2, 0);
+            other.transform.localPosition = new Vector3(0, 0, 0.04f);
+            other.rigidbody.constraints = RigidbodyConstraints.FreezePosition;
+            other.gameObject.GetComponent<Resource>().collected = true;
+            other.gameObject.GetComponent<Resource>().resourceArea.GetComponent<ResourceArea>().DecreaseResource();
+            carryingObject = true;
+            // }
 
         }
     }
