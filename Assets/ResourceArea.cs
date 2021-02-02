@@ -13,8 +13,7 @@ public class ResourceArea : MonoBehaviour
     {
         for (int i = 0; i < resourcesInside; i++)
         {
-            var resource = Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
-            resource.GetComponent<Resource>().resourceArea = transform.gameObject;
+            SpawnResource();
         }
     }
 
@@ -23,24 +22,33 @@ public class ResourceArea : MonoBehaviour
     {
     }
 
-    void SpawnResourceRandomly()
-    {
-        Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
-    }
-
     public void DecreaseResource()
+    {
+        StartCoroutine(DecreaseResourceCoroutine());
+    }
+    IEnumerator DecreaseResourceCoroutine()
     {
         resourcesInside--;
 
-        if (resourcesInside < 5)
-        {
-            Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
-            Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
-            Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
-            Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
-            Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
 
+        if (resourcesInside <= 0)
+        {
+            resourcesInside += 5;
+            yield return new WaitForSeconds(10);
+            SpawnResource();
+            SpawnResource();
+            SpawnResource();
+            SpawnResource();
+            SpawnResource();
         }
+
+
+    }
+
+    private void SpawnResource()
+    {
+        var resource = Instantiate(ResourcePrefab, new Vector3(Random.Range(transform.position.x - transform.localScale.x / 2, transform.position.x + transform.localScale.x / 2), Random.Range(transform.position.y - transform.localScale.y / 2, transform.position.y + transform.localScale.y / 2), Random.Range(transform.position.z - transform.localScale.z / 2, transform.position.z + transform.localScale.z / 2)), Quaternion.identity);
+        resource.gameObject.GetComponent<Resource>().resourceArea = transform.gameObject;
     }
 
 

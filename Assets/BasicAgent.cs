@@ -93,12 +93,12 @@ public class BasicAgent : MonoBehaviour
             // transform.position = transform.position + direction * 2;
             rBody.AddForce(direction * maxAcceleration);
 
-            // Resource = findNearestResource();
+            Resource = findNearestResource();
 
-            // if (Resource != null)
-            // {
-            //     state = "collecting";
-            // }
+            if (Resource != null)
+            {
+                state = "collecting";
+            }
         }
 
 
