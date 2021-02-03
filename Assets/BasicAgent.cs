@@ -41,6 +41,8 @@ public class BasicAgent : MonoBehaviour
             // transform.position = transform.position + direction * 2;
             rBody.AddForce(direction * maxAcceleration);
 
+            Resource = findNearestResource();
+
 
         }
 
@@ -57,11 +59,13 @@ public class BasicAgent : MonoBehaviour
             // transform.position = transform.position + direction * 2;
             rBody.AddForce(direction * maxAcceleration);
 
-            if (distance < 10)
+            if (distance < 15)
             {
                 Resource.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                Resource.transform.localPosition = new Vector3(0, -0.128f, 0.0423f);
                 Resource.transform.parent = null;
+                Resource.transform.localPosition = CollectionPoint.transform.position + new Vector3(0, 20, 0);
+                Resource.GetComponent<Rigidbody>().useGravity = false;
+                Resource.layer = 9;
                 Resource = null;
                 state = "seeking";
                 carryingObject = false;
